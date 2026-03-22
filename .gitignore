@@ -34,4 +34,7 @@ CMakeUserPresets.json
 .DS_Store
 Thumbs.db
 
+# Ignorar arquivo de download da GLAD
+glad.zip
+
 
