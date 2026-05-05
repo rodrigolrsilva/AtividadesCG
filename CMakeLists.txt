@@ -45,9 +45,9 @@ include_directories(${stb_image_SOURCE_DIR})
 # Lista de exemplos/exercícios podem ser colocados aqui também
 set(EXERCISES
     Hello3D
+    Hello3D_M2
     TriangleTex
     SpherePhong
-   
 )
 
 add_compile_options(-Wno-pragmas)
