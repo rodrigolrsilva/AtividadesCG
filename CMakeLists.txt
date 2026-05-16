@@ -77,3 +77,8 @@ foreach(EXERCISE ${EXERCISES})
     target_include_directories(${EXERCISE} PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
     target_link_libraries(${EXERCISE} glfw ${OPENGL_LIBS})
 endforeach()
+
+add_executable(Hello3D_M2V src/Hello3D_M2V.cpp ${GLAD_C_FILE})
+target_include_directories(Hello3D_M2V PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
+target_link_libraries(Hello3D_M2V glfw ${OPENGL_LIBS})
+target_compile_definitions(Hello3D_M2V PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
