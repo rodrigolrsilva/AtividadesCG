@@ -82,3 +82,18 @@ add_executable(Hello3D_M2V src/Hello3D_M2V.cpp ${GLAD_C_FILE})
 target_include_directories(Hello3D_M2V PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
 target_link_libraries(Hello3D_M2V glfw ${OPENGL_LIBS})
 target_compile_definitions(Hello3D_M2V PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
+
+add_executable(Hello3D_M3 src/Hello3D_M3.cpp ${GLAD_C_FILE})
+target_include_directories(Hello3D_M3 PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
+target_link_libraries(Hello3D_M3 glfw ${OPENGL_LIBS})
+target_compile_definitions(Hello3D_M3 PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
+
+add_executable(Hello3D_M4 src/Hello3D_M4.cpp ${GLAD_C_FILE})
+target_include_directories(Hello3D_M4 PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
+target_link_libraries(Hello3D_M4 glfw ${OPENGL_LIBS})
+target_compile_definitions(Hello3D_M4 PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
+
+add_executable(Hello3D_M4V src/Hello3D_M4V.cpp ${GLAD_C_FILE})
+target_include_directories(Hello3D_M4V PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
+target_link_libraries(Hello3D_M4V glfw ${OPENGL_LIBS})
+target_compile_definitions(Hello3D_M4V PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
