@@ -107,3 +107,8 @@ add_executable(Hello3D_M6 src/Hello3D_M6.cpp ${GLAD_C_FILE})
 target_include_directories(Hello3D_M6 PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
 target_link_libraries(Hello3D_M6 glfw ${OPENGL_LIBS})
 target_compile_definitions(Hello3D_M6 PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")
+
+add_executable(Hello3D_GB src/Hello3D_GB.cpp ${GLAD_C_FILE})
+target_include_directories(Hello3D_GB PRIVATE ${CMAKE_SOURCE_DIR}/include/glad ${glm_SOURCE_DIR} ${stb_image_SOURCE_DIR})
+target_link_libraries(Hello3D_GB glfw ${OPENGL_LIBS})
+target_compile_definitions(Hello3D_GB PRIVATE ASSETS_DIR="${CMAKE_SOURCE_DIR}/assets/")

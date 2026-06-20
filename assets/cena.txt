@@ -1,0 +1,16 @@
+# Configuracao da cena - GB
+# Substitua os OBJs pelos modelos do seu diorama
+
+# OBJ: caminho_relativo_aos_assets  tx ty tz  ry_graus  escala
+OBJ Modelos3D/Suzanne.obj      0.0  0.0  0.0    0.0  1.0
+OBJ Modelos3D/Suzanne.obj     -2.5  0.0  0.0   30.0  0.8
+OBJ Modelos3D/Cube.obj         2.5 -1.0  0.0    0.0  0.5
+
+# LUZ: px py pz  cr cg cb
+# Logica de 3 pontos: key light, fill light, back light
+LUZ  3.0  3.0  3.0   1.0 1.0 1.0
+LUZ -3.0  3.0 -3.0   1.0 0.8 0.6
+LUZ  0.0  5.0  0.0   0.6 0.6 1.0
+
+# CAMERA: px py pz  yaw pitch
+CAMERA  0.0  2.0  8.0  -90.0  -10.0
